@@ -1,0 +1,318 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>VLAM-incubator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    
+    
+  <meta name="description" content="VLAM-incubator">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="AVLAM-incubator">
+  <meta property="og:type" content="website">
+  
+<style>
+    
+ @font-face {
+  font-family: 'flanders', monospace;
+  src: url(flanders-art-sans/FlandersArtSans-Regular.woff2) format('woff2'),
+       url(flanders-art-sans/FlandersArtSans-Regular.woff) format('woff'),
+       url(flanders-art-sans/FlandersArtSans-Regular.ttf) format('truetype');
+}   
+    
+body {
+       
+font-family: flanders;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    }
+    
+#contactForm {
+    color: #006780;
+        margin: 0px;
+    margin: 0;
+    display: block;
+}
+    
+  
+.invalid-feedback{
+    color: #ff606e;
+}
+
+.valid-feedback{
+   color: #2acc80;
+}
+    
+    </style>
+  
+
+</head>
+
+<body>
+    
+  <div class="container px-5 my-5">
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <div class="mb-3">
+            <label class="form-label" for="emailAddress">Email Address</label>
+            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="bedrijfsnaam">Bedrijfsnaam</label>
+            <input class="form-control" id="bedrijfsnaam" type="text" placeholder="Bedrijfsnaam" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="bedrijfsnaam:required">Bedrijfsnaam is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="postcode">Postcode</label>
+            <input class="form-control" id="postcode" type="text" placeholder="Postcode" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="postcode:required">Postcode is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="plaatsnaam">Plaatsnaam</label>
+            <input class="form-control" id="plaatsnaam" type="text" placeholder="Plaatsnaam" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="plaatsnaam:required">Plaatsnaam is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="straat">Straat</label>
+            <input class="form-control" id="straat" type="text" placeholder="Straat" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="straat:required">Straat is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="huisnummer">Huisnummer</label>
+            <input class="form-control" id="huisnummer" type="text" placeholder="Huisnummer" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="huisnummer:required">Huisnummer is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="ondernemingsnummer">Ondernemingsnummer</label>
+            <input class="form-control" id="ondernemingsnummer" type="text" placeholder="Ondernemingsnummer" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="ondernemingsnummer:required">Ondernemingsnummer is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="jurischeEntiteit">Jurische entiteit</label>
+            <input class="form-control" id="jurischeEntiteit" type="text" placeholder="Jurische entiteit" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="jurischeEntiteit:required">Jurische entiteit is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="korteBeschrijvingVanLinkMetLandbouwVisserijVlam200Tekens">Korte beschrijving van link met landbouw/visserij/VLAM (200 tekens)</label>
+            <textarea class="form-control" id="korteBeschrijvingVanLinkMetLandbouwVisserijVlam200Tekens" type="text" placeholder="Korte beschrijving van link met landbouw/visserij/VLAM (200 tekens)" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="korteBeschrijvingVanLinkMetLandbouwVisserijVlam200Tekens:required">Korte beschrijving van link met landbouw/visserij/VLAM (200 tekens) is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label d-block">Het betreft een federatie of groepering met minstens 2 niet verbonden ondernemingen</label>
+            <div class="form-check">
+                <input class="form-check-input" id="ja" type="radio" name="hetBetreftEenFederatieOfGroeperingMetMinstens2NietVerbondenOndernemingen" data-sb-validations="required" />
+                <label class="form-check-label" for="ja">Ja</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="nee" type="radio" name="hetBetreftEenFederatieOfGroeperingMetMinstens2NietVerbondenOndernemingen" data-sb-validations="required" />
+                <label class="form-check-label" for="nee">Nee</label>
+            </div>
+            <div class="invalid-feedback" data-sb-feedback="hetBetreftEenFederatieOfGroeperingMetMinstens2NietVerbondenOndernemingen:required">One option is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="indienJaWelkeFederatieOfGroepering">Indien ja, welke federatie of groepering</label>
+            <input class="form-control" id="indienJaWelkeFederatieOfGroepering" type="text" placeholder="Indien ja, welke federatie of groepering" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="indienJaWelkeFederatieOfGroepering:required">Indien ja, welke federatie of groepering is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="naamBedrijf1">Naam bedrijf 1</label>
+            <input class="form-control" id="naamBedrijf1" type="text" placeholder="Naam bedrijf 1" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="naamBedrijf1:required">Naam bedrijf 1 is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="naamBedrijf2">Naam bedrijf 2</label>
+            <input class="form-control" id="naamBedrijf2" type="text" placeholder="Naam bedrijf 2" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="naamBedrijf2:required">Naam bedrijf 2 is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="contactpersoon">Contactpersoon</label>
+            <input class="form-control" id="contactpersoon" type="text" placeholder="Contactpersoon" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="contactpersoon:required">Contactpersoon is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="functie">Functie</label>
+            <input class="form-control" id="functie" type="text" placeholder="Functie" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="functie:required">Functie is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="telefoonnummer">Telefoonnummer</label>
+            <input class="form-control" id="telefoonnummer" type="text" placeholder="Telefoonnummer" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="telefoonnummer:required">Telefoonnummer is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="rekeningnummerWaaropOndersteuningMagGestortWordenNaGoedkeuring">Rekeningnummer waarop ondersteuning mag gestort worden na goedkeuring</label>
+            <input class="form-control" id="rekeningnummerWaaropOndersteuningMagGestortWordenNaGoedkeuring" type="text" placeholder="Rekeningnummer waarop ondersteuning mag gestort worden na goedkeuring" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="rekeningnummerWaaropOndersteuningMagGestortWordenNaGoedkeuring:required">Rekeningnummer waarop ondersteuning mag gestort worden na goedkeuring is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label d-block">Btw-verklaring: de onderneming verklaart niet/wel btw-plichtig te zijn.</label>
+            <div class="form-check">
+                <input class="form-check-input" id="btwVerklaringDeOndernemingVerklaartNietBtwPlichtigTeZijn" type="radio" name="btwVerklaringDeOndernemingVerklaartNietWelBtwPlichtigTeZijn" data-sb-validations="required" />
+                <label class="form-check-label" for="btwVerklaringDeOndernemingVerklaartNietBtwPlichtigTeZijn">Btw-verklaring: de onderneming verklaart niet btw-plichtig te zijn.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="btwVerklaringDeOndernemingVerklaartWelBtwPlichtigTeZijn" type="radio" name="btwVerklaringDeOndernemingVerklaartNietWelBtwPlichtigTeZijn" data-sb-validations="required" />
+                <label class="form-check-label" for="btwVerklaringDeOndernemingVerklaartWelBtwPlichtigTeZijn">Btw-verklaring: de onderneming verklaart wel btw-plichtig te zijn.</label>
+            </div>
+            <div class="invalid-feedback" data-sb-feedback="btwVerklaringDeOndernemingVerklaartNietWelBtwPlichtigTeZijn:required">One option is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="deOndernemingVerklaartVolgendAftrekpercentageTeMogenToepassen">De onderneming verklaart volgend aftrekpercentage te mogen toepassen: …%</label>
+            <input class="form-control" id="deOndernemingVerklaartVolgendAftrekpercentageTeMogenToepassen" type="text" placeholder="De onderneming verklaart volgend aftrekpercentage te mogen toepassen: …%" data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="deOndernemingVerklaartVolgendAftrekpercentageTeMogenToepassen:required">De onderneming verklaart volgend aftrekpercentage te mogen toepassen: …% is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label d-block">Reglement</label>
+            <div class="form-check">
+                <input class="form-check-input" id="deAanvragerVerklaartZichNietOnderToepassingTeBevindenVanEenOfMeerdereVanDeUitsluitingsgrondenVanHetReglementOpDeSteunVoorDeExportincubatorEnAkkoordTeGaanMetDitReglement" type="checkbox" name="reglement" data-sb-validations="required" />
+                <label class="form-check-label" for="deAanvragerVerklaartZichNietOnderToepassingTeBevindenVanEenOfMeerdereVanDeUitsluitingsgrondenVanHetReglementOpDeSteunVoorDeExportincubatorEnAkkoordTeGaanMetDitReglement">De aanvrager verklaart zich niet onder toepassing te bevinden van een of meerdere van de uitsluitingsgronden van het reglement op de steun voor de exportincubator en akkoord te gaan met dit reglement.</label>
+            </div>
+            <div class="invalid-feedback" data-sb-feedback="reglement:required">One option is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label d-block">Privacyreglement</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="deAanvragerVerklaartKennisTeHebbenGenomenVanHetPrivacyreglementOpWwwVlamBeEnVerklaartZichAkkoordMetDeVerwerkingVanPersoonsgegevensVolgensDitPrivacyreglementVoorDeDoeleindenOpgenomenInHetReglementOpDeSteunVoorDeExportincubator" type="checkbox" name="privacyreglement" data-sb-validations="required" />
+                <label class="form-check-label" for="deAanvragerVerklaartKennisTeHebbenGenomenVanHetPrivacyreglementOpWwwVlamBeEnVerklaartZichAkkoordMetDeVerwerkingVanPersoonsgegevensVolgensDitPrivacyreglementVoorDeDoeleindenOpgenomenInHetReglementOpDeSteunVoorDeExportincubator">De aanvrager verklaart kennis te hebben genomen van het privacyreglement op www.vlam.be en verklaart zich akkoord met de verwerking van persoonsgegevens volgens dit privacyreglement voor de doeleinden opgenomen in het reglement op de steun voor de exportincubator.</label>
+            </div>
+            <div class="invalid-feedback" data-sb-feedback="privacyreglement:required">One option is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label d-block">Brexit impact op uw bedrijf</label>
+            <div class="form-check">
+                <input class="form-check-input" id="wijOndervindenEenOmzetVerliesInDeVkOmwilleVanDeBrexit" type="checkbox" name="brexitImpactOpUwBedrijf" data-sb-validations="required" />
+                <label class="form-check-label" for="wijOndervindenEenOmzetVerliesInDeVkOmwilleVanDeBrexit">Wij ondervinden een omzet verlies in de VK omwille van de Brexit</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="wijOndervindenEenWinstmargeVerliesInDeVkOmwilleVanDeBrexit" type="checkbox" name="brexitImpactOpUwBedrijf" data-sb-validations="required" />
+                <label class="form-check-label" for="wijOndervindenEenWinstmargeVerliesInDeVkOmwilleVanDeBrexit">Wij ondervinden een winstmarge verlies in de VK omwille van de Brexit</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="wijOndervindenEenNadeelDoorDouaneformaliteitenOmwilleVanDeBrexit" type="checkbox" name="brexitImpactOpUwBedrijf" data-sb-validations="required" />
+                <label class="form-check-label" for="wijOndervindenEenNadeelDoorDouaneformaliteitenOmwilleVanDeBrexit">Wij ondervinden een nadeel door douaneformaliteiten omwille van de Brexit</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="wijOndervindenEenNadeelDoorDeNieuweVkWetgevingOpSanitaireEnOfFytosanitaireVlak" type="checkbox" name="brexitImpactOpUwBedrijf" data-sb-validations="required" />
+                <label class="form-check-label" for="wijOndervindenEenNadeelDoorDeNieuweVkWetgevingOpSanitaireEnOfFytosanitaireVlak">Wij ondervinden een nadeel door de nieuwe VK-wetgeving op sanitaire en/of fytosanitaire vlak</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="wijOndervindenEenKwaliteitsverliesVanOnzeProductenDoorHetLangereLogistiekeTraject" type="checkbox" name="brexitImpactOpUwBedrijf" data-sb-validations="required" />
+                <label class="form-check-label" for="wijOndervindenEenKwaliteitsverliesVanOnzeProductenDoorHetLangereLogistiekeTraject">Wij ondervinden een kwaliteitsverlies van onze producten door het langere logistieke traject.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="wijOndervindenHogereKostenDoorInvoerheffingenOfLogistiekOfAdministratieOfPersoneel" type="checkbox" name="brexitImpactOpUwBedrijf" data-sb-validations="required" />
+                <label class="form-check-label" for="wijOndervindenHogereKostenDoorInvoerheffingenOfLogistiekOfAdministratieOfPersoneel">Wij ondervinden hogere kosten door: invoerheffingen of logistiek of administratie of personeel.</label>
+            </div>
+            <div class="invalid-feedback" data-sb-feedback="brexitImpactOpUwBedrijf:required">One option is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="heeftDeBrexitOmwilleVanEenNietVernoemdeRedenImpactOpUwBedrijfIndienJaBeschrijfInMaximum200Tekens">Heeft de Brexit omwille van een niet vernoemde reden impact op uw bedrijf? Indien ja, beschrijf in maximum 200 tekens.</label>
+            <textarea class="form-control" id="heeftDeBrexitOmwilleVanEenNietVernoemdeRedenImpactOpUwBedrijfIndienJaBeschrijfInMaximum200Tekens" type="text" placeholder="Heeft de Brexit omwille van een niet vernoemde reden impact op uw bedrijf? Indien ja, beschrijf in maximum 200 tekens." style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="heeftDeBrexitOmwilleVanEenNietVernoemdeRedenImpactOpUwBedrijfIndienJaBeschrijfInMaximum200Tekens:required">Heeft de Brexit omwille van een niet vernoemde reden impact op uw bedrijf? Indien ja, beschrijf in maximum 200 tekens. is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="beschrijvingVanDeDoelmarktVoorUwProductBedrijf10Punten">Beschrijving van de doelmarkt voor uw product/bedrijf (10 punten)</label>
+            <textarea class="form-control" id="beschrijvingVanDeDoelmarktVoorUwProductBedrijf10Punten" type="text" placeholder="Beschrijving van de doelmarkt voor uw product/bedrijf (10 punten)" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="beschrijvingVanDeDoelmarktVoorUwProductBedrijf10Punten:required">Beschrijving van de doelmarkt voor uw product/bedrijf (10 punten) is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="beschrijvingUitvoeringActieProject35Punten">Beschrijving uitvoering actie/project (35 punten)</label>
+            <textarea class="form-control" id="beschrijvingUitvoeringActieProject35Punten" type="text" placeholder="Beschrijving uitvoering actie/project (35 punten)" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="beschrijvingUitvoeringActieProject35Punten:required">Beschrijving uitvoering actie/project (35 punten) is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="verwachteImpactOpLangereTermijn10Punten">Verwachte impact op langere termijn (10 punten)</label>
+            <textarea class="form-control" id="verwachteImpactOpLangereTermijn10Punten" type="text" placeholder="Verwachte impact op langere termijn (10 punten)" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="verwachteImpactOpLangereTermijn10Punten:required">Verwachte impact op langere termijn (10 punten) is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="doelstellingEnManierWaaropDezeGemetenWordt15Punten">Doelstelling en manier waarop deze gemeten wordt (15 punten)</label>
+            <textarea class="form-control" id="doelstellingEnManierWaaropDezeGemetenWordt15Punten" type="text" placeholder="Doelstelling en manier waarop deze gemeten wordt (15 punten)" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="doelstellingEnManierWaaropDezeGemetenWordt15Punten:required">Doelstelling en manier waarop deze gemeten wordt (15 punten) is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="welkeZakenKunnenZichVoordoenDieEenNegatieveImpactHebbenOpUwProject">Welke zaken kunnen zich voordoen die een negatieve impact hebben op uw project</label>
+            <textarea class="form-control" id="welkeZakenKunnenZichVoordoenDieEenNegatieveImpactHebbenOpUwProject" type="text" placeholder="Welke zaken kunnen zich voordoen die een negatieve impact hebben op uw project" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="welkeZakenKunnenZichVoordoenDieEenNegatieveImpactHebbenOpUwProject:required">Welke zaken kunnen zich voordoen die een negatieve impact hebben op uw project is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="gedetailleerdTotaalBudgetEnAandeelEigenInbreng20Punten">Gedetailleerd totaal budget en aandeel eigen inbreng (20 punten)</label>
+            <textarea class="form-control" id="gedetailleerdTotaalBudgetEnAandeelEigenInbreng20Punten" type="text" placeholder="Gedetailleerd totaal budget en aandeel eigen inbreng (20 punten)" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="gedetailleerdTotaalBudgetEnAandeelEigenInbreng20Punten:required">Gedetailleerd totaal budget en aandeel eigen inbreng (20 punten) is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label d-block">Hoe naam u kennis van dit initiatief?</label>
+            <div class="form-check">
+                <input class="form-check-input" id="website" type="radio" name="hoeNaamUKennisVanDitInitiatief" data-sb-validations="required" />
+                <label class="form-check-label" for="website">Website</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="linkedIn" type="radio" name="hoeNaamUKennisVanDitInitiatief" data-sb-validations="required" />
+                <label class="form-check-label" for="linkedIn">LinkedIn</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="facebook" type="radio" name="hoeNaamUKennisVanDitInitiatief" data-sb-validations="required" />
+                <label class="form-check-label" for="facebook">Facebook</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="collega" type="radio" name="hoeNaamUKennisVanDitInitiatief" data-sb-validations="required" />
+                <label class="form-check-label" for="collega">Collega</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="verband" type="radio" name="hoeNaamUKennisVanDitInitiatief" data-sb-validations="required" />
+                <label class="form-check-label" for="verband">Verband</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="seminari" type="radio" name="hoeNaamUKennisVanDitInitiatief" data-sb-validations="required" />
+                <label class="form-check-label" for="seminari">Seminari</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="vlamMedewerker" type="radio" name="hoeNaamUKennisVanDitInitiatief" data-sb-validations="required" />
+                <label class="form-check-label" for="vlamMedewerker">VLAM-medewerker</label>
+            </div>
+            <div class="invalid-feedback" data-sb-feedback="hoeNaamUKennisVanDitInitiatief:required">One option is required.</div>
+        </div>
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <p>To activate this form, sign up at</p>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
